@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+  
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #793FDF, #FF9B50, #E25E3E, #C63D2F);
+    background-size: 300% 300%;
+    animation: color 10s ease-in-out infinite;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    } 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+canvas {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 25px;
+    box-shadow: 10px 10px 20px 10px;
+}
+
+.webTitle {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: bold 35px Garamond;
+    color: white;
+    text-shadow: 3px 2px 5px black;
+}
+
